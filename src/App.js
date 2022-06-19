@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import News from "./Components/News";
 import { BrowserRouter as Browser, Routes, Route } from "react-router-dom";
 
+// ! npx create-react-app my-app --template cra-template-pwa
 function App() {
   return (
     <Browser>

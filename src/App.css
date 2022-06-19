@@ -2,18 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.5s ease-in-out;
 }
 .newsContainer {
+  /* color: white; */
   display: block;
   grid-template-columns: repeat(3, 1fr);
 }
-.spinner {
-  grid-column-start: 2;
+.dark {
+  background-color: black;
 }
-.hidden {
-  display: none;
+.white {
+  background-color: white;
 }
-
+.mode {
+  background-color: orangered;
+  position: fixed;
+  padding: 5px 8px 7px 10px;
+  border-radius: 5000px;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 1px 1px 8px orangered;
+}
+.form-check-input:checked {
+  background-color: rgb(49, 49, 49);
+}
+.fixed {
+  background: url(./Components/Resources/1.jpg);
+}
+.lgog {
+  background-color: white;
+  padding: 5px 0.5rem 1px 0.5rem;
+  border-radius: 50000000px;
+}
 @media only screen and (min-width: 500px) {
   .newsContainer {
     display: grid;

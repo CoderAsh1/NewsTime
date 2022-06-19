@@ -12,15 +12,15 @@ export default function Navbar() {
       justify-between
       py-4
       bg-gray-100
-      text-gray-500
+      text-white
       hover:text-gray-700
-      focus:text-orange-700
+      focus:text-black
       shadow-lg
       navbar navbar-expand-lg navbar-light
       "
     >
       <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-        <Link to="/">
+        <Link to="/" className="lgog">
           <h2 className="text-center text-orange-400 font-bold text-xl">
             <img src={Logo} alt="" style={{ display: "inline" }} />
             News<span className="text-orange-600">Time</span>
@@ -30,7 +30,7 @@ export default function Navbar() {
         <button
           className="
     navbar-toggler
-    text-gray-500
+    text-white
     border-0
     hover:shadow-none hover:no-underline
     py-2
@@ -68,7 +68,7 @@ export default function Navbar() {
           <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto font-bold">
             <li className=" nav-item pr-2">
               <Link
-                className="nav-link text-gray-500 hover:text-white focus:text-orange-700 p-0"
+                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
                 to="/tech"
               >
                 Technology
@@ -76,7 +76,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-gray-500 hover:text-white focus:text-orange-700 p-0"
+                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
                 to="/sports"
               >
                 Sports
@@ -84,7 +84,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-gray-500 hover:text-white focus:text-orange-700 p-0"
+                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
                 to="/entertainment"
               >
                 Entertainment
@@ -92,7 +92,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-gray-500 hover:text-white focus:text-orange-700 p-0"
+                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
                 to="/music"
               >
                 Music
@@ -100,7 +100,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-gray-500 hover:text-white focus:text-orange-700 p-0"
+                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
                 to="/gaming"
               >
                 Gaming
@@ -108,7 +108,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-gray-500 hover:text-white focus:text-orange-700 p-0"
+                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
                 to="/finance"
               >
                 Finance
@@ -116,7 +116,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-gray-500 hover:text-white focus:text-orange-700 p-0"
+                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
                 to="/science"
               >
                 Science
@@ -124,7 +124,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-gray-500 hover:text-white focus:text-orange-700 p-0"
+                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
                 to="/energy"
               >
                 Energy
@@ -132,7 +132,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-gray-500 hover:text-white focus:text-orange-700 p-0"
+                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
                 to="/food"
               >
                 Food

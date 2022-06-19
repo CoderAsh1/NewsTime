@@ -1,10 +1,8 @@
 import React from "react";
-// import Logo from "./Resources/Logo 192x192.png";
 
 export default function Spinner() {
   return (
-    <div className="spinner mt-0 flex flex-col justify-center items-center space-x-2 my-36">
-      {/* <img id="logo" src={Logo} alt="" /> */}
+    <div className="spinner mt-0 flex flex-col justify-center items-center space-x-2 mb-2">
       <div
         id="spin"
         className="
@@ -14,6 +12,8 @@ export default function Spinner() {
     inline-block
     w-8
     h-8
+  
+    pb-0
     border-4
     rounded-full
     text-orange-500
