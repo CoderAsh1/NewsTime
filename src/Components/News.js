@@ -44,6 +44,7 @@ export default function News({ topic, head }) {
       loading = true;
       page += 1;
       getApiData();
+      loading = false;
     }
   }
 
