@@ -66,17 +66,6 @@ function App() {
               />
             }
           ></Route>
-          <Route
-            exact
-            path="/United_States"
-            element={
-              <News
-                topic="entertainment"
-                key="Entertainment"
-                head="Entertainment"
-              />
-            }
-          ></Route>
         </Routes>
       </div>
     </Browser>
