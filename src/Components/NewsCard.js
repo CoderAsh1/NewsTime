@@ -7,7 +7,6 @@ export default function NewsCard({
   urlToImage,
   url,
   date,
-  mode,
 }) {
   const load = () => {
     if (!urlToImage) {
@@ -30,10 +29,10 @@ export default function NewsCard({
     return myDay + " " + date;
   }
   return (
-    <div className={`p-4 text-${mode.color} mb-0`}>
+    <div className={`newscard p-4 text-white bg-gray-800 mb-0`}>
       <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
         <img
-          className="lg:h-48 md:h-36 w-full object-cover object-center"
+          className="lg:h-48 md:h-36 w-full object-cover object-center "
           src={urlToImage}
           onLoad={load}
           alt="NewsTime"

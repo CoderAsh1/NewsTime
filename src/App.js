@@ -7,7 +7,7 @@ import { BrowserRouter as Browser, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Browser>
-      <div className="App">
+      <div className="App bg-gray-800">
         <Navbar />
         <Routes>
           <Route
@@ -52,12 +52,23 @@ function App() {
           ></Route>
           <Route
             exact
-            path="/food"
-            element={<News topic="food" key="Food" head="Food" />}
+            path="/world"
+            element={<News topic="world" key="World" head="World" />}
           ></Route>
           <Route
             exact
             path="/entertainment"
+            element={
+              <News
+                topic="entertainment"
+                key="Entertainment"
+                head="Entertainment"
+              />
+            }
+          ></Route>
+          <Route
+            exact
+            path="/United_States"
             element={
               <News
                 topic="entertainment"

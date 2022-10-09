@@ -2,19 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.5s ease-in-out;
 }
 .newsContainer {
   /* color: white; */
   display: block;
   grid-template-columns: repeat(3, 1fr);
 }
-.dark {
-  background-color: black;
+
+body {
+  transition: all 0.5s ease-in;
+  background-color: rgb(31 41 55);
 }
-.white {
-  background-color: white;
+.badge {
+  position: absolute;
 }
+
 .mode {
   background-color: orangered;
   position: fixed;
@@ -27,11 +29,8 @@
 .form-check-input:checked {
   background-color: rgb(49, 49, 49);
 }
-.fixed {
-  background: url(./Components/Resources/1.jpg);
-}
+
 .lgog {
-  background-color: white;
   padding: 5px 0.5rem 1px 0.5rem;
   border-radius: 50000000px;
 }

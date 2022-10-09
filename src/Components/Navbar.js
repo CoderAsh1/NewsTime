@@ -11,10 +11,11 @@ export default function Navbar() {
       flex flex-wrap
       justify-between
       py-4
-      bg-gray-100
+      bg-gray-800
       text-white
       hover:text-gray-700
-      focus:text-black
+      
+
       shadow-lg
       navbar navbar-expand-lg navbar-light
       "
@@ -55,10 +56,10 @@ export default function Navbar() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
-            <path
+            <pathtext-black
               fill="currentColor"
               d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-            ></path>
+            ></pathtext-black>
           </svg>
         </button>
         <div
@@ -68,7 +69,8 @@ export default function Navbar() {
           <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto font-bold">
             <li className=" nav-item pr-2">
               <Link
-                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
+                className="nav-link text-white hover:text-orange-200 
+ p-0"
                 to="/tech"
               >
                 Technology
@@ -76,7 +78,8 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
+                className="nav-link text-white hover:text-orange-200 
+ p-0"
                 to="/sports"
               >
                 Sports
@@ -84,7 +87,8 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
+                className="nav-link text-white hover:text-orange-200 
+ p-0"
                 to="/entertainment"
               >
                 Entertainment
@@ -92,7 +96,8 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
+                className="nav-link text-white hover:text-orange-200 
+ p-0"
                 to="/music"
               >
                 Music
@@ -100,7 +105,8 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
+                className="nav-link text-white hover:text-orange-200 
+ p-0"
                 to="/gaming"
               >
                 Gaming
@@ -108,7 +114,8 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
+                className="nav-link text-white hover:text-orange-200 
+ p-0"
                 to="/finance"
               >
                 Finance
@@ -116,7 +123,8 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
+                className="nav-link text-white hover:text-orange-200 
+ p-0"
                 to="/science"
               >
                 Science
@@ -124,7 +132,8 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
+                className="nav-link text-white hover:text-orange-200 
+ p-0"
                 to="/energy"
               >
                 Energy
@@ -132,10 +141,11 @@ export default function Navbar() {
             </li>
             <li className="nav-item pr-2">
               <Link
-                className="nav-link text-white hover:text-orange-200 focus:text-black p-0"
-                to="/food"
+                className="nav-link text-white hover:text-orange-200 
+ p-0"
+                to="/world"
               >
-                Food
+                world
               </Link>
             </li>
           </ul>
