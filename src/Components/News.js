@@ -16,14 +16,7 @@ export default function News({ topic, head, region }) {
 
     axios
       .get(
-        ` https://api.newscatcherapi.com/v2/latest_headlines?countries=US&topic=${topic}&page_size=50&lang=en&page=${page}`,
-
-        {
-          method: "GET",
-          headers: {
-            "x-api-key": apiKey,
-          },
-        }
+        `https://newsapi.org/v2/everything?q=${topic}&pageSize=50&apiKey=${apiKey}&page=${page}`
       )
       .then((response) => {
         console.log(response);
@@ -53,21 +46,20 @@ export default function News({ topic, head, region }) {
   }, []);
 
   return (
-    <div className={`pt-20  bg-gray-800 text-white`}>
+    <div className={`pt-20  bg-gray-800 text-white `}>
       <h1 className="text-center font-bold text-2xl p-4">
         Top HeadLines on <span className="text-orange-500">{head}</span>
       </h1>
       <div className="newsContainer">
         {data.map((result, i) => (
-          <div key={i}>
-            <NewsCard
-              title={result.title}
-              description={result.excerpt}
-              urlToImage={result.media}
-              url={result.link}
-              date={result.published_date}
-            />
-          </div>
+          <NewsCard
+            key={i}
+            title={result.title}
+            description={result.description}
+            urlToImage={result.urlToImage}
+            url={result.url}
+            date={result.published_date}
+          />
         ))}
       </div>
       {loading && <Spinner />}

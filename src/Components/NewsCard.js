@@ -29,7 +29,7 @@ export default function NewsCard({
     return myDay + " " + date;
   }
   return (
-    <div className={`newscard p-4 text-white bg-gray-800 mb-0`}>
+    <div className={`newscard p-2 text-white bg-gray-800 mb-0 `}>
       <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
         <img
           className="lg:h-48 md:h-36 w-full object-cover object-center "

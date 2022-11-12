@@ -6,7 +6,6 @@
 .newsContainer {
   /* color: white; */
   display: block;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 body {
@@ -17,15 +16,6 @@ body {
   position: absolute;
 }
 
-.mode {
-  background-color: orangered;
-  position: fixed;
-  padding: 5px 8px 7px 10px;
-  border-radius: 5000px;
-  bottom: 10px;
-  right: 10px;
-  box-shadow: 1px 1px 8px orangered;
-}
 .form-check-input:checked {
   background-color: rgb(49, 49, 49);
 }
@@ -36,11 +26,16 @@ body {
 }
 @media only screen and (min-width: 500px) {
   .newsContainer {
+    display: block;
+  }
+}
+@media only screen and (min-width: 680px) {
+  .newsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 880px) {
   .newsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
