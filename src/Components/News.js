@@ -16,7 +16,14 @@ export default function News({ topic, head, region }) {
 
     axios
       .get(
-        `https://newsapi.org/v2/everything?q=${topic}&pageSize=50&apiKey=${apiKey}&page=${page}`
+        ` https://api.newscatcherapi.com/v2/latest_headlines?countries=US&topic=${topic}&page_size=50&lang=en&page=${page}`,
+
+        {
+          method: "GET",
+          headers: {
+            "x-api-key": apiKey,
+          },
+        }
       )
       .then((response) => {
         console.log(response);
@@ -55,9 +62,9 @@ export default function News({ topic, head, region }) {
           <NewsCard
             key={i}
             title={result.title}
-            description={result.description}
-            urlToImage={result.urlToImage}
-            url={result.url}
+            description={result.excerpt}
+            urlToImage={result.media}
+            url={result.link}
             date={result.published_date}
           />
         ))}
