@@ -47,7 +47,7 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <img src={Menu} />
+          <img src={Menu} alt="menu-icon" />
         </button>
         <div
           className="hamburger pl-8 collapse navbar-collapse flex-grow items-center"
